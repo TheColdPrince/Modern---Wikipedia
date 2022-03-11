@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-gray-900">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - wikipedia article redesign</title>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milky Way - Wikipedia</title>
+    <link
+      href="https://api.fontshare.com/css?f[]=sentient@500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon" />
+    <script src="./script.js" defer></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css'>
+<link rel='stylesheet' href='https://api.fontshare.com/css?f[]='><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="
+      p-5
+      xl:p-10
+      max-w-screen-2xl
+      relative
+      left-1/2
+      transform
+      -translate-x-1/2
+    ">
+  <header class="flex justify-between items-center">
+    <img src="https://assets.codepen.io/3607040/logo.webp" alt="Wikipedia Logo" width="auto" height="auto" class="w-20 dark:invert hover:cursor-pointer" />
+    <nav class="flex gap-3">
+      <div class="search-wrapper flex flex-row gap-2 items-start">
+        <input type="text" class="
+              search-input
+              hidden
+              rounded
+              h-full
+              bg-gray-100
+              dark:bg-gray-800 dark:text-gray-300
+              p-1.5
+              shadow-md
+              font-text font-semibold
+              focus:ring-2 focus:ring-blue-500
+            " placeholder="Type to search" />
+        <button class="
+              search-icon
+              active:text-blue-500
+              hover:text-blue-500
+              dark:text-gray-300
+            " onclick="searchToggle();">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="
+            h-10
+            w-10
+            cursor-pointer
+            active:text-blue-500
+            hover:text-blue-500
+            dark:text-gray-300
+          " viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+      </svg>
+    </nav>
+  </header>
+
+  <main class="lg:grid lg:grid-cols-2 lg:gap-8 xl:grid-cols-3 mt-8">
+    <article class="
+          lg:col-start-1 lg:row-start-1 lg:row-span-full lg:place-self-center
+          xl:col-start-1 xl:col-span-2
+          2xl:place-self-start
+        ">
+      <h1 class="text-4xl font-heading font-bold dark:text-gray-300">
+        Milky Way
+      </h1>
+      <br />
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300">
+        The <strong> Milky Way </strong>is the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">galaxy</a>
+        that includes our
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Solar System</a>, with the name describing the galaxy's appearance from
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Earth</a>: a hazy band of light seen in the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">night sky</a>
+        formed from stars that cannot be individually distinguished by the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">naked eye</a>. The term Milky Way is a translation of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Latin</a>
+        via lactea, from the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              py-0.5
+              px-0.5
+              transition
+              ease-in-out
+            ">Greek</a>
+        γαλακτικός κύκλος (galaktikos kýklos, "milky circle"). From Earth, the
+        Milky Way appears as a band because its disk-shaped structure is
+        viewed from within.
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Galileo Galilei</a>
+        first resolved the band of light into individual stars with his
+        telescope in 1610. Until the early 1920s, most astronomers thought
+        that the Milky Way contained all the stars in the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Universe</a>. Following the 1920
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Great Debate</a>
+        between the astronomers
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Harlow Shapley
+        </a>
+        and
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Heber Curtis</a>, observations by
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Edwin Hubble</a>
+        showed that the Milky Way is just one of many galaxies.
+      </p>
+    </article>
+    <br />
+    <aside class="
+          font-text font-medium
+          mb-5
+          lg:col-start-2 lg:row-start-1 lg:row-span-3
+          xl:col-start-3
+        ">
+      <figure class="
+            bg-gray-100
+            dark:bg-gray-800
+            rounded
+            p-5
+            pb-5
+            pt-2
+            filter
+            shadow-md
+          ">
+        <h2 class="font-heading font-bold text-xl pt-3 pb-3 dark:text-gray-300">
+          Milky Way Galaxy
+        </h2>
+        <img src="https://assets.codepen.io/3607040/milky-way-telescope.webp" alt="The Milky Way's galactic center in the night sky above the Paranal
+              Observatory" class="rounded" />
+        <figcaption class="text-gray-600 dark:text-gray-300 pt-5">
+          The Milky Way's galactic center in the night sky above the
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">
+            Paranal Observatory</a>
+        </figcaption>
+      </figure>
+      <div class="
+            bg-gray-100
+            dark:bg-gray-800
+            rounded
+            p-5
+            pb-5
+            pt-2
+            mt-5
+            filter
+            shadow-md
+          ">
+        <table class="table-auto w-full text-gray-600 dark:text-gray-300">
+          <thead>
+            <tr>
+              <h2 class="
+                    font-heading font-bold
+                    text-xl
+                    pt-3
+                    pb-3
+                    dark:text-gray-300
+                  ">
+                Observation Data
+              </h2>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="flex justify-between">
+              <td class="font-semibold">Constellation</td>
+              <td>Sagittarius</td>
+            </tr>
+            <tr class="flex justify-between">
+              <td class="font-semibold">Right ascension</td>
+              <td>17h 45m 40.0409s</td>
+            </tr>
+            <tr class="flex justify-between">
+              <td class="font-semibold">Declination</td>
+              <td>−29° 0′ 28.118″</td>
+            </tr>
+            <tr class="flex justify-between">
+              <td class="font-semibold">Distance</td>
+              <td>25.6–27.1 kly</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="
+            bg-gray-100
+            dark:bg-gray-800
+            rounded
+            p-5
+            pb-5
+            pt-2
+            mt-5
+            filter
+            shadow-md
+          ">
+        <table class="table-auto w-full text-gray-600 dark:text-gray-300">
+          <thead>
+            <tr>
+              <h2 class="
+                    font-heading font-bold
+                    text-xl
+                    pt-3
+                    pb-3
+                    dark:text-gray-300
+                  ">
+                Characteristics
+              </h2>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Type</td>
+              <td>Sb, Sbc, or SB(rs)bc (barred spiral galaxy)</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Mass</td>
+              <td>(0.8–1.5)×1012 M</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Number of stars</td>
+              <td>100–400 billion</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Size</td>
+              <td>Stellar disk: 185 ± 15 kly</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Thickness of thin stellar disk</td>
+              <td>≈2 kly (0.6 kpc)</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Angular momentum</td>
+              <td>≈1×1067 J s</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Sun's Galactic rotation period</td>
+              <td>240 Myr</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Spiral pattern rotation period</td>
+              <td>220–360 Myr</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Bar pattern rotation period</td>
+              <td>100–120 Myr</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Speed relative to CMB rest frame</td>
+              <td>552.2±5.5 km/s</td>
+            </tr>
+            <tr class="flex justify-between gap-4">
+              <td class="font-semibold">Escape velocity at Sun's position</td>
+              <td>550 km/s</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="
+            bg-gray-100
+            dark:bg-gray-800
+            rounded
+            mt-5
+            p-5
+            pb-5
+            pt-5
+            filter
+            shadow-md
+            grid
+          ">
+        <img src="https://assets.codepen.io/3607040/milky-way-constellation.webp" alt="A view of the Milky Way toward the constellation Sagittarius" class="rounded justify-self-center" />
+        <figcaption class="text-gray-600 dark:text-gray-300 pt-5">
+          A view of the Milky Way toward the constellation
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">Sagittarius</a>
+          (including the
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">
+            Galactic Center</a>), as seen from a dark site with little
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">light pollution</a>
+          (the
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">
+            Black Rock Desert</a>, Nevada), the bright object on the lower right is Jupiter, just
+          above
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                px-0.5
+                py-0.5
+                transition
+                ease-in-out
+              ">
+            Antares</a>
+        </figcaption>
+      </figure>
+    </aside>
+    <article class="lg:col-start-1 lg:row-start-2 xl:row-start-2 xl:col-span-2 prose">
+      <br />
+      <p class="
+            font-text font-medium
+            text-gray-600
+            dark:text-gray-300
+            mt-3
+            lg:-mt-3
+          ">
+        The Milky Way is a
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">barred spiral galaxy</a>
+        with an estimated visible diameter of 100,000–200,000
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">light-years</a>. Recent simulations suggest that a
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">dark matter</a>
+        disk, also containing some visible stars, may extend up to a diameter
+        of almost 2 million light-years. The Milky Way has
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">satellite galaxies
+        </a>
+        several and is part of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Local Group</a>
+        of galaxies, which form part of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Virgo Supercluster</a>, which is itself a component of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Laniakea Supercluster</a>.
+      </p>
+      <br />
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300 mt-3">
+        It is estimated to contain 100–400 billion
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">stars</a>
+        and at least that number of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">planets</a>.The Solar System is located at a radius of about 27,000 light-years
+        from the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Galactic Center</a>, on the inner edge of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Orion Arm</a>, one of the spiral-shaped concentrations of gas and dust. The stars
+        in the innermost 10,000 light-years form a
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">bulge</a>
+        and one or more bars that radiate from the bulge. The galactic center
+        is an intense radio source known as
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Sagittarius A*</a>, a<a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">supermassive black hole</a>
+        of 4.100 (± 0.034) million
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">solar masses</a>. Stars and gases at a wide range of distances from the Galactic
+        Center orbit at approximately 220 kilometers per second. The constant
+        rotation speed contradicts the laws of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Keplerian dynamics</a>
+        and suggests that much (about 90%) of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">mass</a>
+        of the Milky Way is invisible to telescopes, neither emitting nor
+        absorbing
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">electromagnetic radiation</a>. This conjectural mass has been termed "
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">dark matter</a>". The rotational period is about 240 million years at the radius of
+        the Sun. The Milky Way as a whole is moving at a velocity of
+        approximately 600 km per second with respect to extragalactic frames
+        of reference. The oldest stars in the Milky Way are nearly as old as
+        the Universe itself and thus probably formed shortly after the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Dark Ages</a>
+        of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Big Bang</a>.
+      </p>
+      <br />
+      <h2 class="font-heading font-bold text-2xl dark:text-gray-300" id="appearance">
+        Appearance
+      </h2>
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300 mt-3">
+        The Milky Way is visible from Earth as a hazy band of white light,
+        some 30° wide, arching the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">night sky</a>. In night sky observing, although all the individual naked-eye
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">stars</a>
+        in the entire sky are part of the Milky Way Galaxy, the term "Milky
+        Way" is limited to this band of light. The light originates from the
+        accumulation of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">unresolved</a>
+        stars and other material located in the direction of the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">galactic plane</a>. Brighter regions around the band appear as soft visual patches
+        known as
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">star clouds</a>. The most conspicuous of these is the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Large Sagittarius Star Cloud</a>, a portion of the central bulge of the galaxy. Dark regions within
+        the band, such as the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Great Rift</a>
+        and the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Coalsack</a>, are areas where
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">interstellar dust</a>
+        blocks light from distant stars. The area of sky that the Milky Way
+        obscures is called the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Zone of Avoidance</a>.
+      </p>
+      <br />
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300 mt-3">
+        The Milky Way has a relatively low
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">surface brightness</a>. Its visibility can be greatly reduced by background light, such as
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">light pollution</a>
+        or
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">moonlight</a>. The sky needs to be darker than about 20.2
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">magnitude</a>
+        per square arcsecond in order for the Milky Way to be visible. It
+        should be visible if the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">limiting magnitude</a>
+        is approximately +5.1 or better and shows a great deal of detail at
+        +6.1. This makes the Milky Way difficult to see from brightly lit
+        urban or suburban areas, but very prominent when viewed from
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">rural areas</a>
+        when the Moon is below the horizon. Maps of artificial night sky
+        brightness show that more than one-third of Earth's population cannot
+        see the Milky Way from their homes due to light pollution.
+      </p>
+      <br />
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300 mt-3">
+        As viewed from Earth, the visible region of the Milky Way's
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">galactic plane</a>
+        occupies an area of the sky that includes 30
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">constellations</a>. The
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Galactic Center</a>
+        lies in the direction of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Sagittarius</a>, where the Milky Way is brightest. From Sagittarius, the hazy band
+        of white light appears to pass around to the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">galactic anticenter</a>
+        in
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Auriga</a>. The band then continues the rest of the way around the sky, back to
+        Sagittarius, dividing the sky into two roughly equal
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">hemispheres</a>.
+      </p>
+      <br />
+      <p class="font-text font-medium text-gray-600 dark:text-gray-300 mt-3">
+        The galactic plane is inclined by about 60° to the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">ecliptic</a>
+        (the plane of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Earth's orbit</a>). Relative to the
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">celestial equator</a>, it passes as far north as the constellation of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Cassiopeia</a>
+        and as far south as the constellation of
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">Crux</a>, indicating the high inclination of Earth's
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">equatorial plane</a>
+        and the plane of the ecliptic, relative to the galactic plane. The
+        north galactic pole is situated at
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">right ascension</a>
+        12h 49m,
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">declination</a>
+        +27.4° (<a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">B1950</a>
+        ) near
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">β Comae Berenices</a>, and the south galactic pole is near
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">α Sculptoris</a>. Because of this high inclination, depending on the time of night
+        and year, the Milky Way arch may appear relatively low or relatively
+        high in the sky. For observers from latitudes approximately 65° north
+        to 65° south, the Milky Way passes
+        <a href="#" class="
+              pointer
+              text-blue-500
+              hover:bg-blue-500
+              rounded
+              hover:text-white
+              px-0.5
+              py-0.5
+              transition
+              ease-in-out
+            ">directly overhead</a>
+        twice a day.
+      </p>
+    </article>
+    <nav class="
+          mt-5
+          rounded
+          bg-gray-100
+          dark:bg-gray-800
+          p-3
+          w-max
+          xl:place-self-start
+          filter
+          shadow-md
+          lg:col-start-1 lg:row-start-3
+        ">
+      <h2 class="font-heading font-bold text-2xl dark:text-gray-300">
+        Contents
+      </h2>
+      <ol class="
+            list-decimal
+            ml-5
+            mt-5
+            font-text font-medium
+            text-gray-600
+            dark:text-gray-300
+          ">
+        <li class="mb-1">
+          <a href="#appearance" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Appearance</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Size and mass</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Contents</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Structure</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Formation</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Environment</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Velocity</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Etymology and mythology</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Astronomical history</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">See also</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Notes</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">References</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">Further reading</a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="
+                pointer
+                text-blue-500
+                hover:bg-blue-500
+                rounded
+                hover:text-white
+                pt-1
+                pb-1
+                pr-2
+                pl-2
+                transition
+                ease-in-out
+              ">External links</a>
+        </li>
+      </ol>
+    </nav>
+  </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
